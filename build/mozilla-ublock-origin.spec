@@ -47,3 +47,4 @@ rm -rf %{buildroot}
 
 %changelog
 * Tue Nov 3 2015 Chris Smart <csmart@kororaproject.org>- 1.3.2-1
+- Initial build
