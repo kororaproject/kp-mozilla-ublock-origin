@@ -7,14 +7,14 @@
 %global inst_dir %{moz_extensions}/%{firefox_app_id}/%{src_ext_id}
 
 Name:           mozilla-ublock-origin
-Version:        1.5.3
+Version:        1.9.16
 Release:        1%{?dist}
 Summary:        An efficient blocker add-on for various browsers. Fast, potent, and lean.
 
 Group:          Applications/Internet
 License:        GPLv3
 URL:            https://github.com/gorhill/uBlock
-Source0:        https://addons.cdn.mozilla.net/user-media/addons/607454/ublock_origin-%{version}-sm+tb+fx+an.xpi
+Source0:        https://addons.mozilla.org/firefox/downloads/file/525551/ublock_origin-%{version}-an+fx+sm+tb.xpi
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 BuildArch:      noarch
 
@@ -45,6 +45,9 @@ rm -rf %{buildroot}
 %{inst_dir}.xpi
 
 %changelog
+* Thu Jan 7 2016 Chris Smart <csmart@kororaproject.org>- 1.9.16-1
+- Update to 1.9.16 release
+
 * Thu Jan 7 2016 Chris Smart <csmart@kororaproject.org>- 1.5.3-1
 - Update to 1.5.3 release
 - Use signed xpi from Mozilla so that it works in Firefox 43
