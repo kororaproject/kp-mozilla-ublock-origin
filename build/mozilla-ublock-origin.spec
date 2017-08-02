@@ -7,7 +7,7 @@
 %global inst_dir %{moz_extensions}/%{firefox_app_id}/%{src_ext_id}
 
 Name:           mozilla-ublock-origin
-Version:        1.9.16
+Version:        1.13.8
 Release:        1%{?dist}
 Summary:        An efficient blocker add-on for various browsers. Fast, potent, and lean.
 
@@ -45,6 +45,9 @@ rm -rf %{buildroot}
 %{inst_dir}.xpi
 
 %changelog
+* Wed Aug 2 2017 Ian Firns <firnsy@kororaproject.org>- 1.13.8-1
+- Update to 1.13.8 release
+
 * Thu Jan 7 2016 Chris Smart <csmart@kororaproject.org>- 1.9.16-1
 - Update to 1.9.16 release
 
